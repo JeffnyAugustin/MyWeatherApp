@@ -1,0 +1,67 @@
+* {
+    padding : 0;
+    margin: 0;
+}
+
+body {
+display: flex;
+justify-content: center;
+}
+
+#container {
+    background-color: blueviolet;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+#searchBox {
+    text-align: center;
+    width: 60%;
+    height: 40px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 2rem;
+}
+
+
+#allTogether {
+    width: 50VW;
+    height: 50VH;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(158 158 158 / 40%);
+    border-radius: 10px;
+}
+
+div#meteoElement {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+div#cityElement {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+p {
+    font-size: 2rem;
+    color: white;
+}
+
+p.cityName {
+    text-align: center;
+}
+
+
+h1 
+
