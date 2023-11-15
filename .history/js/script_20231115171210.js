@@ -19,9 +19,7 @@ heading.className = "textTitle"
 heading.textContent = 'My Weather App';
 
 
-// Création de div pour la recherche
-const searchDiv = document.createElement("div");
-searchDiv.id = "searchContainer";
+
 
 // Création barre de recherche
 const inputSearch = document.createElement("input");
@@ -32,7 +30,14 @@ inputSearch.placeholder = "Entrez le nom de la ville"; // Ajout du placeholder
 // Ajoutez cette ligne pour ajouter l'icône de loupe à la barre de recherche
 const searchIcon = document.createElement("i");
 searchIcon.className = "fas fa-search";
-searchDiv.appendChild(searchIcon);
+inputSearch.appendChild(searchIcon);
+// Création de l'icône
+const searchIcon = document.createElement("i");
+searchIcon.className = "fas fa-search"; // Utilisation de "fas" pour les icônes solides, ou "far" pour les icônes régulières
+
+// Ajout de l'icône à un élément avec l'ID "myElement" par exemple
+const myElement = document.getElementById("myElement");
+myElement.appendChild(searchIcon);
 
 
 // Création de div
@@ -230,9 +235,7 @@ newDiv.append(infoCityDiv, weather); // ajout du conteneur Weather à newDiv
 infoCityDiv.append(cityName, cityImgDiv)
 cityImgDiv.append(image, descriptionDiv)
 titleDiv.appendChild(heading)
-// Ajout de la barre de recherche à la div de recherche
-searchDiv.appendChild(inputSearch);
-divContain.append(titleDiv, searchDiv, newDiv, forecastDiv); // ajout de tous les éléments à divContain
+divContain.append(titleDiv, inputSearch, newDiv, forecastDiv); // ajout de tous les éléments à divContain
 document.body.appendChild(divContain);
 
 

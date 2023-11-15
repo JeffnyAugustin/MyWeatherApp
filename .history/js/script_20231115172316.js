@@ -32,7 +32,7 @@ inputSearch.placeholder = "Entrez le nom de la ville"; // Ajout du placeholder
 // Ajoutez cette ligne pour ajouter l'icône de loupe à la barre de recherche
 const searchIcon = document.createElement("i");
 searchIcon.className = "fas fa-search";
-searchDiv.appendChild(searchIcon);
+inputSearch.appendChild(searchIcon);
 
 
 // Création de div
@@ -230,9 +230,8 @@ newDiv.append(infoCityDiv, weather); // ajout du conteneur Weather à newDiv
 infoCityDiv.append(cityName, cityImgDiv)
 cityImgDiv.append(image, descriptionDiv)
 titleDiv.appendChild(heading)
-// Ajout de la barre de recherche à la div de recherche
-searchDiv.appendChild(inputSearch);
-divContain.append(titleDiv, searchDiv, newDiv, forecastDiv); // ajout de tous les éléments à divContain
+
+divContain.append(titleDiv, inputSearch, newDiv, forecastDiv); // ajout de tous les éléments à divContain
 document.body.appendChild(divContain);
 
 

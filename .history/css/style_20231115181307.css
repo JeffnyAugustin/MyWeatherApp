@@ -9,7 +9,7 @@ body {
     height: 100vh;
     width: 100vw;
     background: linear-gradient(0deg, rgba(82,77,238,1) 0%, rgba(146,228,240,1) 100%);
-    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 #container {
@@ -17,7 +17,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    gap: 40px;
+    gap: 20px;
 
 }
 
@@ -36,10 +36,6 @@ body {
 
 #searchBox input {
     padding-left: 30px; /* Ajoutez un espace pour l'icône à gauche */
-}
-
-#searchBox:focus {
-    outline: none;
 }
 
 #searchContainer i.fas.fa-search {

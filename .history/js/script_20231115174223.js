@@ -31,8 +31,8 @@ inputSearch.placeholder = "Entrez le nom de la ville"; // Ajout du placeholder
 
 // Ajoutez cette ligne pour ajouter l'icône de loupe à la barre de recherche
 const searchIcon = document.createElement("i");
-searchIcon.className = "fas fa-search";
-searchDiv.appendChild(searchIcon);
+searchIcon.className = "fa-solid fa-magnifying-glass";
+se.appendChild(searchIcon);
 
 
 // Création de div
