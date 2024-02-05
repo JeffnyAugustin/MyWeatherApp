@@ -27,7 +27,7 @@ searchDiv.id = "searchContainer";
 const inputSearch = document.createElement("input");
 inputSearch.id = "searchBox";
 inputSearch.type = "text";
-inputSearch.placeholder = "Entrez le nom de la ville"; // Ajout du placeholder
+inputSearch.placeholder = "Entrez le nom d'une ville"; // Ajout du placeholder
 
 // Ajoutez cette ligne pour ajouter l'icône de loupe à la barre de recherche
 const searchIcon = document.createElement("i");
